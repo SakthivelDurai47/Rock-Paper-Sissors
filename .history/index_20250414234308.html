@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissor</title>
+    <meta name="aurthor" content="Sakthivel Durai S" />
+    <meta name="sound" content="Suresh Aditya I" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="clickSound" src="tap.mp3" preload="auto"></audio>
+    <main>
+      <h1>Rock | Paper | Scissor</h1>
+      <div id="choice">
+        <button onclick="playGame('Rock')">🪨</button>
+        <button onclick="playGame('Paper')">📄</button>
+        <button onclick="playGame('Scissor')">✂️</button>
+      </div>
+      <div id="info">
+        <h3 id="playerInfo">Player: - - -</h3>
+        <h3 id="computerInfo">Computer: - - -</h3>
+      </div>
+      <h2 id="result">Choose!</h2>
+      <div id="scores">
+        <h4>Your Score: <span id="scorePlr">0</span></h4>
+        <h4>Computer Score: <span id="scoreCum">0</span></h4>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
